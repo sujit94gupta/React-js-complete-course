@@ -1,35 +1,65 @@
-import { useState } from 'react'
+import React, { useState, Fragment } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-function App() {
+export default function DivFragment() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <div>
+      <h3>Div Wrap Fragment</h3>
+      <ul class="list-group">
+        <li class="list-group-item active" aria-current="true">An active item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+        <li class="list-group-item">A fourth item</li>
+      </ul>
+      <ShortFragment />
+      <ReactFragment />
+      <WithoutFragment />
+    </div>
+  );
+}
+
+export function ShortFragment() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h3>Short Syntax</h3>
+      <ul class="list-group">
+        <li class="list-group-item active" aria-current="true">An active item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+        <li class="list-group-item">A fourth item</li>
+      </ul>
     </>
-  )
+  );
 }
 
-export default App
+export function ReactFragment() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <Fragment>
+      <h3>React Fragment Use</h3>
+      <ul class="list-group">
+        <li class="list-group-item active" aria-current="true">An active item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+        <li class="list-group-item">A fourth item</li>
+      </ul>
+    </Fragment>
+  );
+}
+
+
+
+export function WithoutFragment() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <h3>Without Fragment</h3>
+  );
+}
