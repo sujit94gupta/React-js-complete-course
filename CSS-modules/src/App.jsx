@@ -10,11 +10,11 @@ function App() {
   return (
     <>
       <h1>CSS Module</h1>
-      <button className={{ style: 'color: red' }}>CSS Module</button>
+      <button className={styles.btn}>CSS Module</button>
 
       <br />
       <h3>Advance Multiple Classes</h3>
-      <button className={`${styles.btn} ${styles.box}`}>CSS Module</button>
+      <button className={`${styles.btn} ${styles.box}`}>CSS Module</button >
     </>
   )
 }
