@@ -1,0 +1,37 @@
+.app-container {
+    display: flex;
+}
+
+.content {
+    width: 100%;
+}
+
+.sidebar {
+    min-height: 800px;
+}
+
+.post-card {
+    width: 30rem;
+    margin: 20px 50px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+
+}
+
+.hashtag {
+    margin: 0px 3px;
+    ;
+}
+
+.reactions {
+    margin: 15px 0px;
+}
+
+.create-post {
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 10%;
+}

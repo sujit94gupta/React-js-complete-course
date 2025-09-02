@@ -1,0 +1,13 @@
+.kgitem {
+    /* background-color: khaki !important; */
+}
+
+.kgspan {
+    font-weight: 500;
+    color: orangered;
+    float: left;
+}
+
+.button {
+    float: right;
+}

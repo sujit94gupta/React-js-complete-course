@@ -1,5 +1,10 @@
 import styles from './FoodInput.module.css'
 const FoodInput = () => {
+
+    const handleOnChange = (event) => {
+        console.log(event.type);
+    }
+
     return (
         <>
             <input
@@ -7,7 +12,7 @@ const FoodInput = () => {
                 className={styles.FoodInput}
                 placeholder='Enter FoodItem here..'
                 onChange={(e) => {
-                    console.log(e.target)
+                    handleOnChange(e)
                 }}
             >
             </input>
