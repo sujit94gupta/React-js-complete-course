@@ -13,11 +13,12 @@ function App() {
     { id: 4, name: 'Salad', price: 6 },
     { id: 5, name: 'Sushi', price: 12 }
   ];
+
   return (
     <div className='container'>
       <Container>
         <h2 className="food-heading">Healthy Food</h2>
-        <FoodInput ></FoodInput>
+        <FoodInput></FoodInput>
         <ErrorMessage items={fooditems} />
         <FoodItems items={fooditems} />
       </Container>
